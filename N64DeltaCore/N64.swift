@@ -64,7 +64,7 @@ public struct N64: DeltaCoreProtocol
     public var identifier: String { "com.rileytestut.N64DeltaCore" }
     
     public var gameType: GameType { GameType.n64 }
-    public var gameInputType: Input.Type { N64GameInput.self }
+    public var gameInputType: Input.Type { N64GameInput.self as! Input.Type }
     public var gameSaveFileExtension: String { "sav" }
     
     public var audioFormat: AVAudioFormat { N64EmulatorBridge.shared.preferredAudioFormat }
